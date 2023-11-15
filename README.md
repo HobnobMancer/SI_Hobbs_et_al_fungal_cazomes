@@ -58,6 +58,15 @@ The installation instructions for `dbCAN` v==2.0.11 can be found [here](https://
 
 ## Download genomes
 
+The `pyrewton` subcommand `download_genomes` was used to download the genomes for the set of candidate species listed in `data/species/2020_03_01_species_list`.
+
+Run the following command from the root of this directory. To run this command a email address must be provide as this is a requirement of Entrez.
+```bash
+scripts/genomes/download_genomes.sh <email>
+```
+
+The CSV file created when using `pyrewton` to download the genomes, and which lists the downloaded genomes, is provided in `data/genomes/2020_05_31_genome_dataframe.csv`.
+
 ## Extracting proteomes
 
 ## Annotation CAZomes
