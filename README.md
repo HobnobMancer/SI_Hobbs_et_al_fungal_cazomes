@@ -67,9 +67,22 @@ scripts/genomes/download_genomes.sh <email>
 
 The CSV file created when using `pyrewton` to download the genomes, and which lists the downloaded genomes, is provided in `data/genomes/2020_05_31_genome_dataframe.csv`.
 
+The genomes were downloaded in `.gbff` format and written to `data/genomes/genomes`.
+
 ## Extracting proteomes
 
+The subcommand `extract_protein_seqs` from `pyrewton` was used to extract the protein sequences from the downloaded genomic assemblies. These were written to `data/proteins/proteomes`, creating one multi-sequences FASTA file per genome.
+```bash
+scripts/genomes/extract_protein_seqs.sh
+```
+
 ## Annotation CAZomes
+
+### Build a local CAZyme database
+
+### Get CAZy annotated CAZymes
+
+### Run dbCAN
 
 ## Building a local CAZome database
 
