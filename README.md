@@ -54,6 +54,8 @@ scripts/download/install_pyani_v0-3x.sh
 
 The installation instructions for `dbCAN` v==2.0.11 can be found [here](https://github.com/linnabrown/run_dbcan/tree/fde6d7225441ef3d4cb29ea29e39cfdcc41d8b19) and were followed to install dbCAN for the analysis presented in the manuscript.
 
+To repeat the analysis and use the provided bash scripts, download the dbCAN database files into a directory called `dbcan/`, which is located in the root of the repository.
+
 # Reproducing the analysis
 
 ## Download genomes

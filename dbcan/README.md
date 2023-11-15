@@ -1,0 +1,1 @@
+To repeat the analyses using the provided bash scripts, as is, download the dbCAN reference databases to this directory.
