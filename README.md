@@ -122,6 +122,25 @@ The script uses the YAML file `data/cazomes/compile_db_config.yaml` as the input
 scripts/cazomes/compile_cazome_db.sh
 ```
 
+Additional data (listed below) was retrieved from the UniProtKB database and imported into the local CAZome database using the `pyrewton` subcommand configured using the bash script `get_uniprot_data.sh`:
+```bash
+scripts/cazomes/get_uniprot_data.sh
+```
+
+The data retrieved from UniProtKB and imported into the local CAZome database included:
+
+* Active site annotations
+* Citation data
+* Cofactors
+* EC numbers
+* Glycoslyation data
+* Metal binding and metal binding sites
+* Optimal pH
+* Protein structure PDB IDs
+* Substrates and substrate binding sites
+* Transmembrane regions
+
+
 ## ANI tree reconstruction
 
 ## Phylogenetic tree reconstruction
