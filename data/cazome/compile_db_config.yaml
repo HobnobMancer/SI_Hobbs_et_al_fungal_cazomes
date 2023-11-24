@@ -1,0 +1,4 @@
+dbCAN:
+  version: 2.0.11
+  cazy_release: March 2020
+  dir: data/proteins/dbcan_output
