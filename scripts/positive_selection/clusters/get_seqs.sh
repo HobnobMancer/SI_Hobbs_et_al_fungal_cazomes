@@ -1,5 +1,31 @@
 DB="data/cazy/all_cazy_2020_01_13.db"
 
+
+"WITH dbcanProteins (dbcanDomains) AS (
+	SELECT domain_id
+	FROM Domains
+	INNER JOIN Classifiers on Domains.classifier_id = Classifiers.classifier_id
+	WHERE Classifiers.classifier = 'dbCAN'
+), cazyProteins (cazyDomains) AS (
+	SELECT domain_id
+	FROM Domains
+	INNER JOIN Classifiers on Domains.classifier_id = Classifiers.classifier_id
+	WHERE Classifiers.classifier = 'CAZy'
+)
+SELECT DISTINCT Proteins.genbank_accession, CazyFamilies.family, Classifiers.classifier
+FROM Proteins
+INNER JOIN Domains on Proteins.protein_id = Domains.protein_id
+INNER JOIN CazyFamilies on Domains.family_id = CazyFamilies.family_id
+INNER JOIN Classifiers on Domains.classifier_id = Classifiers.classifier_id
+LEFT JOIN dbcanProteins ON Domains.domain_id = dbcanProteins.dbcanDomains
+LEFT JOIN cazyProteins ON Domains.domain_id = cazyProteins.cazyDomains
+WHERE CazyFamilies.family like 'CE%' AND
+	Domains.domain_id IN dbcanProteins AND
+	Domains.domain_id IN cazyProteins
+"
+
+
+
 # generate lists of protein IDs
 
 sqlite3 $DB "
