@@ -2,8 +2,8 @@ DB="data/cazy/all_cazy_2020_01_13.db"
 
 # generate lists of protein IDs
 
-sqlite3 $DB -header -csv "
-SELECT DISTINCT Proteins.genbank_accession, CazyFamilies.family, Classifiers.classifier
+sqlite3 $DB "
+SELECT DISTINCT Proteins.genbank_accession
 FROM Proteins
 INNER JOIN Domains on Proteins.protein_id = Domains.protein_id
 INNER JOIN CazyFamilies on Domains.family_id = CazyFamilies.family_id
@@ -11,8 +11,8 @@ INNER JOIN Classifiers on Domains.classifier_id = Classifiers.classifier_id
 WHERE CazyFamilies.family like 'CE%' and Classifiers.classifier = 'dbCAN'
 " > data/positive_selection/class_prot_ids/ce_ids
 
-sqlite3 $DB -header -csv "
-SELECT DISTINCT Proteins.genbank_accession, CazyFamilies.family, Classifiers.classifier
+sqlite3 $DB "
+SELECT DISTINCT Proteins.genbank_accession
 FROM Proteins
 INNER JOIN Domains on Proteins.protein_id = Domains.protein_id
 INNER JOIN CazyFamilies on Domains.family_id = CazyFamilies.family_id
@@ -20,8 +20,8 @@ INNER JOIN Classifiers on Domains.classifier_id = Classifiers.classifier_id
 WHERE CazyFamilies.family like 'PL%' and Classifiers.classifier = 'dbCAN'
 " > data/positive_selection/class_prot_ids/pl_ids
 
-sqlite3 $DB -header -csv "
-SELECT DISTINCT Proteins.genbank_accession, CazyFamilies.family, Classifiers.classifier
+sqlite3 $DB "
+SELECT DISTINCT Proteins.genbank_accession
 FROM Proteins
 INNER JOIN Domains on Proteins.protein_id = Domains.protein_id
 INNER JOIN CazyFamilies on Domains.family_id = CazyFamilies.family_id
