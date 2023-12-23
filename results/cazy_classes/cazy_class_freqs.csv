@@ -1,0 +1,13 @@
+,CAZyClass,Lineage,MeanCazyClass,SdCazyClass,MeanClassPerc,SdClassPerc,NumOfGenomes
+0,GH,Fungi,271.97,59.32,56.21,3.59,32
+1,GH,Oomycete,178.67,55.08,51.15,3.66,9
+2,GT,Fungi,99.03,13.45,20.95,2.89,32
+3,GT,Oomycete,101.11,21.05,30.54,6.2,9
+4,PL,Fungi,15.0,8.05,2.93,1.15,32
+5,PL,Oomycete,31.89,21.49,8.14,5.41,9
+6,CE,Fungi,32.0,12.66,6.39,1.47,32
+7,CE,Oomycete,20.0,9.45,5.36,2.0,9
+8,AA,Fungi,60.84,22.66,12.24,2.84,32
+9,AA,Oomycete,13.78,5.41,3.77,0.91,9
+10,CBM,Fungi,48.62,13.78,9.95,2.11,32
+11,CBM,Oomycete,10.89,3.21,3.14,0.31,9
