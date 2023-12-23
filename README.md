@@ -152,3 +152,7 @@ The Jupyter notebook `notebooks/exploring_fungi_and_oomycete_cazomes.ipynb` was 
 * Using principal component analysis and single-linkage hierarchical clustering to explore differences in the CAZome composiotns and map on taxonomy to these data
 
 ## Screening for positive selection
+
+**method to be added**
+
+All output from the positive selection screen for RKL00490.1 and AIE38009.1, incuding their _in silco_ characterisation are available in the directory `positive_selection_candidates`.
