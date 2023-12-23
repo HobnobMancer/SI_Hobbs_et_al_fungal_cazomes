@@ -140,15 +140,19 @@ The data retrieved from UniProtKB and imported into the local CAZome database in
 * Substrates and substrate binding sites
 * Transmembrane regions
 
-
-## ANI tree reconstruction
-
-## Phylogenetic tree reconstruction
-
-### Oomycete
-
-### Fungi
-
 ## Exploring CAZomes using `cazomevolve`
 
+The Jupyter notebook `notebooks/exploring_fungi_and_oomycete_cazomes.ipynb` was used to coordinate `cazomevolve` (version 1.7.3) to explore the CAZomes of the fungi and oomycete genomes. This specifically includes:
+
+* Comparing the size of proteomes
+* Comparing the size of the CAZome
+* Comparing the percentage of the proteome that is encapsulated by the CAZome
+* Comparing the number of CAZyme families
+* Comparing CAZyme class and family frequencies
+* Using principal component analysis and single-linkage hierarchical clustering to explore differences in the CAZome composiotns and map on taxonomy to these data
+
 ## Screening for positive selection
+
+**method to be added**
+
+All output from the positive selection screen for RKL00490.1 and AIE38009.1, incuding their _in silco_ characterisation are available in the directory `positive_selection_candidates`.
